@@ -1,0 +1,61 @@
+<!-- BEGIN CONTACTS SECTION -->
+<section id="rsvp" class="bg-color pattern">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        <h1 class="section-title">Confirmar presença</h1>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-8 center">
+
+        <div v-if="notFinished">
+          <div class="form-wrap" id="guest_form">
+            <section class="highlighted">
+              <h3><i class="icon icon-arrow-right"></i>Você vai ao casamento?<i class="icon icon-arrow-left"></i></h3>
+              <div data-value="attending_wedding" class="radio-lilac col-sm-12">
+                <button class="btn btn-default active" data-value="yes" v-on:click="willAttend(true)"><i class="fa fa-smile-o"></i>Sim</button>
+                <button class="btn btn-default" data-value="no" v-on:click="willAttend(false)"><i class="fa fa-frown-o"></i>Não</button>
+              </div>
+              <div class="col-sm-6">
+                <input type="text" name="Name" placeholder="SEU NOME*" class="form-control required guest_name" v-on:keyup="keymonitor" v-model="name"/>
+              </div>
+              <div class="col-sm-6">
+                <input type="text" name="Phone" placeholder="SEU CELULAR*" class="form-control required guest_phone"  />
+              </div>
+            </section>
+
+            <div class="has-guest hidden">
+              <div v-if="hasGuest">
+                <section>
+                  <h3><i class="icon icon-arrow-right"></i>Quem mais irá com você?<i class="icon icon-arrow-left"></i></h3>
+                  <div class="col-md-12">
+                    <div v-for="(item, index) in selected.invited">
+                      <input type="text" v-bind:id="'guest_' + index" name="guest" placeholder="NOME" class="form-control guest_list" />
+                    </div>
+                  </div>
+                </section>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div v-else>
+          <div class="form-wrap">
+            <section class="highlighted">
+              <h3><i class="icon icon-arrow-right"></i>Obrigado pela sua confirmação!<i class="icon icon-arrow-left"></i></h3>
+              <div v-if="attend">
+                <h3>Nos vemos lá!</h3>
+                <h3>#casandoIseFred</h3>
+              </div>
+            </section>
+          </div>
+        </div>
+        <div v-if="notFinished" class="center">
+          <button v-on:click="sendForm" type="submit" class="btn ribbon btn-color"><span class="line_above"></span><i class="icon icon-arrow-right"></i>CONFIRMAR<i class="icon icon-arrow-left"></i></button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- END CONTACTS SECTION -->
