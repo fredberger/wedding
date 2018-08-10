@@ -1953,7 +1953,6 @@ fieldset[disabled] .btn.ribbon.active {
 .timeline::before {
   content: "";
   width: 3px;
-  height: 100%;
   position: absolute;
   top: 0;
   left: 50%;
