@@ -2743,6 +2743,7 @@ fieldset[disabled] .btn.ribbon.active {
   -webkit-border-radius: 1px;
   -moz-border-radius: 1px;
   border-radius: 1px;
+  border: 2px solid rgba(255, 255, 255, 0.5);
 }
 .wedding-gifts li::before {
   position: absolute;
@@ -2751,19 +2752,7 @@ fieldset[disabled] .btn.ribbon.active {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(255, 255, 255, 0.9);
   z-index: 1;
-  border: 0px solid transparent;
-  -webkit-box-shadow: inset 0px 0px 0px 2px rgba(255, 255, 255, 0);
-  -moz-box-shadow: inset 0px 0px 0px 2px rgba(255, 255, 255, 0);
-  box-shadow: inset 0px 0px 0px 2px rgba(255, 255, 255, 0);
-  -webkit-transition: all 0.3s ease-out;
-  -moz-transition: all 0.3s ease-out;
-  -ms-transition: all 0.3s ease-out;
-  -o-transition: all 0.3s ease-out;
-  transition: all 0.3s ease-out;
-}
-.wedding-gifts li:hover::before {
   background-color: rgba(177, 177, 177, 0.9);
   border: 15px solid transparent;
   -webkit-box-shadow: inset 0px 0px 0px 2px rgba(255, 255, 255, 0.5);
@@ -2773,43 +2762,23 @@ fieldset[disabled] .btn.ribbon.active {
 .wedding-gifts li > i {
   position: relative;
   font-size: 44pt;
-  margin-top: 120px;
   margin-bottom: 5px;
   z-index: 2;
-  -webkit-transition: all 0.3s ease-out;
-  -moz-transition: all 0.3s ease-out;
-  -ms-transition: all 0.3s ease-out;
-  -o-transition: all 0.3s ease-out;
-  transition: all 0.3s ease-out;
-}
-.wedding-gifts li:hover > i {
   color: #fff;
   margin-top: 50px;
 }
 .wedding-gifts li h3 {
   position: relative;
   z-index: 2;
-  -webkit-transition: all 0.3s ease-out;
-  -moz-transition: all 0.3s ease-out;
-  -ms-transition: all 0.3s ease-out;
-  -o-transition: all 0.3s ease-out;
-  transition: all 0.3s ease-out;
-}
-.wedding-gifts li:hover h3 {
   color: #fff;
 }
 .wedding-gifts li .info {
   position: relative;
   z-index: 2;
-  -webkit-opacity: 0;
-  -moz-opacity: 0;
-  opacity: 0;
-  -webkit-transition: all 0.3s ease-out;
-  -moz-transition: all 0.3s ease-out;
-  -ms-transition: all 0.3s ease-out;
-  -o-transition: all 0.3s ease-out;
-  transition: all 0.3s ease-out;
-  margin-top: -80px;
+  -webkit-opacity: 1;
+  -moz-opacity: 1;
+  opacity: 1;
+  margin-top: 20px;
 }
 .wedding-gifts li .info img {
   background: rgba(255, 255, 255, 0.15);
@@ -2818,15 +2787,6 @@ fieldset[disabled] .btn.ribbon.active {
 }
 .wedding-gifts li .info .btn {
   margin: 4px 8px;
-}
-.wedding-gifts li:hover {
-  border: 2px solid rgba(255, 255, 255, 0.5);
-}
-.wedding-gifts li:hover .info {
-  -webkit-opacity: 1;
-  -moz-opacity: 1;
-  opacity: 1;
-  margin-top: 20px;
 }
 .wedding-gifts #gift-list {
   background-image: url("../images/wedding-gift1.jpg");
