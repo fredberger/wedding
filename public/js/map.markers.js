@@ -1,6 +1,34 @@
 //List of map markers
 var map_markers = [
 	{
+		"title": "Hotel Ibis",
+		"latitude":-21.6780477,
+		"longitude":-49.7656437,
+		"icon":"fa-bed",
+		"infoWindow": "<strong>Hotel Ibis</strong><br/>R. Floriano Peixoto, 1808 - Centro, Lins-SP<br/>Tel.: (14) 3511-0100"
+	},
+	{
+		"title": "Blue Tree Park Lins | Resort",
+		"latitude":-21.691068,
+		"longitude":-49.7595692,
+		"icon":"fa-bed",
+		"infoWindow": "<strong>Blue Tree Park Lins | Resort</strong><br/>Rod. Mal. Rondon, Km. 443,3, s/n - Zona Rural, Lins-SP<br/>Tel.: (14) 3533-6300"
+	},
+	{
+		"title": "Cristal Palace Hotel",
+		"latitude":-21.683242,
+		"longitude":-49.7602028,
+		"icon":"fa-bed",
+		"infoWindow": "<strong>Cristal Palace Hotel</strong><br/>R. Luiz Gama, 1771 - Bairro Xingú, Lins-SP<br/>Tel.: (14) 3511-0700"
+	},
+	{
+		"title": "Cristal Palace Inn",
+		"latitude":-21.6838271,
+		"longitude":-49.7599567,
+		"icon":"fa-bed",
+		"infoWindow": "<strong>Cristal Palace Inn</strong><br/>R. Apiacás, 85, Lins-SP<br/>Tel.: (14) 3533-3700"
+	},
+	{
 		"title": "Hotel Esplanada",
 		"latitude":-21.5357308,
 		"longitude":-49.8567939,
