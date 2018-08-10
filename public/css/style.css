@@ -1956,6 +1956,7 @@ fieldset[disabled] .btn.ribbon.active {
   position: absolute;
   top: 0;
   left: 50%;
+  height: 100%;
   margin-left: -2px;
   background: #626262;
   -webkit-opacity: 0.5;
@@ -2524,10 +2525,10 @@ fieldset[disabled] .btn.ribbon.active {
   list-style: none;
   padding: 0;
   width: 100%;
-  margin-bottom: 50px;
 }
 .location-info::before {
   top: 60px;
+  height: 0;
 }
 .location-info .event_left,
 .location-info .event_right {
