@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', () => {
     methods: {
       keymonitor: function (event) {
         var that = this
-        const found = that.list.find((l) => l.name === that.name)
+        const found = that.list.find((l) => l.name.toLowerCase() === that.name.toLowerCase())
 
         if (found) {
           that.selected = found
