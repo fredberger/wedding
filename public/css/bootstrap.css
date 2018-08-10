@@ -5751,9 +5751,11 @@ button.close {
   overflow-y: auto;
 }
 .modal-dialog {
-  width: 80%;
-  margin: 50px auto;
-  height: 80%;
+  position: absolute;
+  left: 50px;
+  top: 50px;
+  bottom: 50px;
+  right: 50px;
 }
 .modal-content {
   position: relative;
@@ -5797,9 +5799,10 @@ button.close {
   line-height: 1.42857143;
 }
 .modal-body {
-  position: relative;
+  position: fixed;
   padding: 15px;
-  height: 93%;
+  bottom: 0px;
+  top: 90px;
   overflow: scroll;
 }
 .modal-footer {
@@ -5826,9 +5829,11 @@ button.close {
 }
 @media (min-width: 768px) {
   .modal-dialog {
-    width: 80%;
-    margin: 50px auto;
-    height: 80%;
+    position: absolute;
+    left: 50px;
+    top: 50px;
+    bottom: 50px;
+    right: 50px;
   }
   .modal-content {
     -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
