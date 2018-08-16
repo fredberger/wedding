@@ -50,13 +50,6 @@ var map_markers = [
 		"infoWindow": "<strong>Salão de Beleza Vanessa Zonetti</strong><br/>Rua Coronel João Francisco Coelho, 398, Promissão-SP<br/>Tel.: (14) 99843-2144"
 	},
 	{
-		"title": "Studio Aninha Monteiro",
-		"latitude":-21.5434491,
-		"longitude":-49.8583209,
-		"icon":"fa-female",
-		"infoWindow": "<strong>Studio Aninha Monteiro</strong><br/>Rua Sassaishi Mazaki, 619, Promissão-SP<br/>Tel.: (14) 99112-9945"
-	},
-	{
 		"title": "Maycon Moreira Hairstylist",
 		"latitude":-21.6793381,
 		"longitude":-49.7657238,
