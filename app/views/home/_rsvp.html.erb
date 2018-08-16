@@ -22,7 +22,7 @@
                 <input type="text" name="Name" placeholder="Nome que consta no convite" class="form-control required guest_name" v-on:keyup="keymonitor" v-model="name"/>
               </div>
               <div class="col-sm-6">
-                <input type="text" name="Phone" placeholder="Celular" class="form-control required guest_phone"  />
+                <input type="text" name="Phone" placeholder="Celular" v-on:keyup="keymonitor" class="form-control required guest_phone"  />
               </div>
             </section>
 

@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
     },
     computed: {
       hasGuest: function () {
-        if (this.selected && this.selected.invited > 0 && !this.selected.attend) {
+        if (this.attend !== false && this.selected && this.selected.invited > 0 && !this.selected.attend) {
           document.getElementsByClassName('has-guest')[0].classList.remove('hidden')
           return true
         }
@@ -45,6 +45,9 @@ document.addEventListener('DOMContentLoaded', () => {
         } else {
           that.selected = null
         }
+
+        document.getElementsByClassName('guest_name')[0].classList.remove('error')
+        document.getElementsByClassName('guest_phone')[0].classList.remove('error')
       },
       willAttend: function (data) {
         var that = this
@@ -70,9 +73,9 @@ document.addEventListener('DOMContentLoaded', () => {
         guest_phone.classList.remove('error')
         var has_error = false
         if (self.attend && guest.phone === "") {
+          guest_phone.classList.add('error')
           has_error = true
         }
-        guest_phone.classList.add('error')
         if (guest.name === "" || !self.selected || self.selected.attend) {
           guest_name.classList.add('error')
           has_error = true

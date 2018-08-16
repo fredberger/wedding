@@ -15,6 +15,13 @@ var map_markers = [
 		"infoWindow": "<strong>Blue Tree Park Lins | Resort</strong><br/>Rod. Mal. Rondon, Km. 443,3, s/n - Zona Rural, Lins-SP<br/>Tel.: (14) 3533-6300"
 	},
 	{
+		"title": "Hotel Pousada Barravento",
+		"latitude":-21.6796927,
+		"longitude":-49.7661426,
+		"icon":"fa-bed",
+		"infoWindow": "<strong>Hotel Pousada Barravento</strong><br/>R. Ver. Manoel Ouvinhas Júnior, 31 - Jardim Arapua, Lins-SP<br/>Tel.: (14) 3522-5050"
+	},
+	{
 		"title": "Cristal Palace Hotel",
 		"latitude":-21.683242,
 		"longitude":-49.7602028,
@@ -37,8 +44,8 @@ var map_markers = [
 	},
 	{
 		"title": "Salão de Beleza Vanessa Zonetti",
-		"latitude":-21.5382128,
-		"longitude":-49.8602358,
+		"latitude":-21.537527,
+		"longitude":-49.860832,
 		"icon":"fa-female",
 		"infoWindow": "<strong>Salão de Beleza Vanessa Zonetti</strong><br/>Rua Coronel João Francisco Coelho, 398, Promissão-SP<br/>Tel.: (14) 99843-2144"
 	},
