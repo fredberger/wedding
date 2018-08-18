@@ -75,6 +75,6 @@ var map_markers = [
 		"latitude": -21.5365186,
 		"longitude": -49.8593983,
 		"icon": "fa-bell-o",
-		"infoWindow": "<strong>Paróqui Nossa Senhora Aparecida</strong><br/>Rua Coronel João Francisco Coelho, 181, Centro, Promissão-SP"
+		"infoWindow": "<strong>Paróquia Nossa Senhora Aparecida</strong><br/>Rua Coronel João Francisco Coelho, 181, Centro, Promissão-SP"
 	},
 ];
