@@ -64,10 +64,17 @@ var map_markers = [
 		"infoWindow": "<strong>Exotic Center</strong><br/>Rua Nove de Julho, 321, Centro, Lins-SP<br/>Tel.: (14) 3523-4516"
 	},
 	{
+		"title": "Salão de Festas Grand House",
+		"latitude":-21.5364454,
+		"longitude":-49.8572817,
+		"icon":"fa-glass",
+		"infoWindow": "<strong>Salão de Festas Grand House</strong><br/>Avenida Silvano Faria, 222, Centro, Promissão-SP"
+	},
+	{
 		"title": "Cerimônia",
 		"latitude": -21.5365186,
 		"longitude": -49.8593983,
 		"icon": "fa-bell-o",
-		"infoWindow": "<strong>Paróqui Nossa Senhora Aparecida</strong><br/>Rua Coronel João Francisco Coelho, 181, Centro, Promissão - SP"
+		"infoWindow": "<strong>Paróqui Nossa Senhora Aparecida</strong><br/>Rua Coronel João Francisco Coelho, 181, Centro, Promissão-SP"
 	},
 ];
