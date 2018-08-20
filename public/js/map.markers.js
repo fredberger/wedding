@@ -50,6 +50,13 @@ var map_markers = [
 		"infoWindow": "<strong>Salão de Beleza Vanessa Zonetti</strong><br/>Rua Coronel João Francisco Coelho, 398, Promissão-SP<br/>Tel.: (14) 99843-2144"
 	},
 	{
+		"title": "Salão Vera Lozano",
+		"latitude":-21.538556,
+		"longitude":-49.8534269,
+		"icon":"fa-female",
+		"infoWindow": "<strong>Salão Vera Lozano</strong><br/>Av. Júlio Prestes, 1393, Centro, Promissão-SP<br/>Tel.: (14) 3541-2241"
+	},
+	{
 		"title": "Maycon Moreira Hairstylist",
 		"latitude":-21.6793381,
 		"longitude":-49.7657238,
