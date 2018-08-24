@@ -645,6 +645,20 @@ var Lilac;
                         ]
                     });
                 }
+
+                if ($(".girls-boys-slider").length) {
+                    $(".girls-boys-slider").owlCarousel({
+                        itemsCustom: [
+                            [0, 1],
+                            [590, 2],
+                            [751, 2],
+                            [975, 3],
+                            [1183, 4],
+                            [1440, 4],
+                            [1728, 4]
+                        ]
+                    });
+                }
             },
 
             createGallery: function () {
@@ -988,6 +1002,28 @@ var Lilac;
                     }
 
                     $(".bridesmaids-groomsmen-buttons .btn").removeClass("active");
+                    t.addClass("active");
+                });
+
+                // Capture .girls-boys-buttons Buttons click event.
+                $(".girls-boys-buttons .btn").on('click', function (e) {
+                    e.preventDefault();
+
+                    var t = $(this),
+                        slider = t.data("slider");
+
+                    if (!t.hasClass("active")) {
+                        $(".girls-boys-slider").addClass("hide").css({opacity: 0});
+
+                        if (first) {
+                            first = false;
+                            $("#" + slider).removeClass("hide");
+                        } else {
+                            $("#" + slider).removeClass("hide").animate({opacity: 1}, 500);
+                        }
+                    }
+
+                    $(".girls-boys-buttons .btn").removeClass("active");
                     t.addClass("active");
                 });
 
