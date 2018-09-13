@@ -10,7 +10,8 @@ document.addEventListener('DOMContentLoaded', () => {
       selected: null,
       name: '',
       attend: true,
-      finished: false
+      finished: false,
+      msgSent: false
     },
     mounted: function () {
       var that = this;
@@ -30,6 +31,9 @@ document.addEventListener('DOMContentLoaded', () => {
           return true
         }
         return false
+      },
+      notSent: function () {
+        return !this.msgSent
       },
       notFinished: function () {
         return !this.finished
@@ -52,6 +56,22 @@ document.addEventListener('DOMContentLoaded', () => {
       willAttend: function (data) {
         var that = this
         that.attend = data
+      },
+      sendMsg: function () {
+        var self = this
+        var token = document.getElementsByName('csrf-token')[0].getAttribute('content')
+        axios.defaults.headers.common['X-CSRF-Token'] = token
+        var gift_msg = document.getElementsByClassName('gift_msg')[0]
+        axios.post('/messages/', {
+          message: {
+            body: gift_msg.value
+          }
+        }).then(function (response) {
+          self.msgSent = true
+          console.log(response)
+        }).catch(function (error) {
+          console.log(error)
+        })
       },
       sendForm: function () {
         var self = this

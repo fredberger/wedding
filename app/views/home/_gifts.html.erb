@@ -12,10 +12,14 @@
         <ul class="wedding-gifts clearfix">
           <li id="gift-list" data-animation-direction="from-bottom" data-animation-delay="250">
             <i class="fa fa-at"></i><br>
-            <h3>Confira nossas<br><strong>listas online</strong></h3>
+            <h3>Confira nossa<br><strong>lista online</strong></h3>
             <div class="info">
-              <a href="http://nossosite.fastshop.com.br/fredericoeanaluise/productList" target="_blank" class="img"><img src="images/fast.png" alt="Fastshop" /></a>
-              <a href="http://www.camicado.com.br/weddinglist/products/0060390553" target="_blank" class="img"><img src="images/camicado.png" alt="Camicado" /></a>
+              <br>
+              <br>
+              <br>
+              <button type="button" class="btn btn-default2" data-toggle="modal" data-target="#giftModal2">
+                Ver Presentes
+              </button>
             </div>
           </li>
           <li id="help-wedding" data-animation-direction="from-bottom" data-animation-delay="450">
@@ -38,6 +42,25 @@
         </ul>
       </div>
     </div>
-  </div>
+    <div class="row">
+      <div class="col-sm-8 center">
+        <div class="form-wrap" id="guest_form">
+          <section class="highlighted">
+            <div v-if="notSent">
+              <h3><i class="icon icon-arrow-right"></i>Deixe uma mensagem<i class="icon icon-arrow-left"></i></h3>
+              <div class="col-sm-12">
+                <textarea rows="4" class="form-control gift_msg" style="resize: none;"></textarea>
+              </div>
+            </div>
+            <div v-else>
+              <h3><i class="icon icon-arrow-right"></i>Obrigado<i class="icon icon-arrow-left"></i></h3>
+            </div>
+          </section>
+        </div>
+        <div v-if="notSent" class="center">
+          <button v-on:click="sendMsg" type="submit" class="btn ribbon btn-color"><span class="line_above"></span><i class="icon icon-arrow-right"></i>ENVIAR<i class="icon icon-arrow-left"></i></button>
+        </div>
+      </div>
+    </div>
 </section>
 <!-- END WEDDING GIFTS SECTION -->

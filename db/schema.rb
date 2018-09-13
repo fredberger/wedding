@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_08_09_004901) do
+ActiveRecord::Schema.define(version: 2018_09_13_011007) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -21,6 +21,10 @@ ActiveRecord::Schema.define(version: 2018_08_09_004901) do
     t.json "list", default: []
     t.boolean "attend"
     t.integer "invited", default: 0
+  end
+
+  create_table "messages", force: :cascade do |t|
+    t.text "body"
   end
 
 end
