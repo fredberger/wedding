@@ -6,6 +6,12 @@ class GuestsController < ApplicationController
     render json: { status: "ok", guests: guests }
   end
 
+  def attend
+    @attend = Guest.where(attend: true)
+    @not = Guest.where(attend: false)
+    @guests = Guest.where(attend: nil)
+  end
+
   def update
     guest = Guest.find(params[:id])
     if guest.update(object_params)

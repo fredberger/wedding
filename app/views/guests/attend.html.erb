@@ -1,0 +1,91 @@
+<div id="app">
+    <div id="wrapper">
+        <div class="container">
+            <br/>
+            <br/>
+            <div class="row">
+                <div class="col-md-12">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th>Id</th>
+                                <th>Nome</th>
+                                <th>Telefone</th>
+                                <th>Outros</th>
+                                <th>Convidados</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <h5>Confirmados</h5>
+                            <% @attend.each do |a| %>
+                                <tr>
+                                    <th scope="row"><%= a.id %></th>
+                                    <td><%= a.name %></td>
+                                    <td><%= a.phone %></td>
+                                    <td><%= a.list.join(',') %></td>
+                                    <td><%= a.invited %></td>
+                                </tr>
+                            <% end %>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <br/>
+            <div class="row">
+                <div class="col-md-12">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th>Id</th>
+                                <th>Nome</th>
+                                <th>Telefone</th>
+                                <th>Outros</th>
+                                <th>Convidados</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <h5>Não irão</h5>
+                            <% @not.each do |n| %>
+                                <tr>
+                                    <th scope="row"><%= n.id %></th>
+                                    <td><%= n.name %></td>
+                                    <td><%= n.phone %></td>
+                                    <td><%= n.list.join(',') %></td>
+                                    <td><%= n.invited %></td>
+                                </tr>
+                            <% end %>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <br/>
+            <div class="row">
+                <div class="col-md-12">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th>Id</th>
+                                <th>Nome</th>
+                                <th>Telefone</th>
+                                <th>Outros</th>
+                                <th>Convidados</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <h5>Restante</h5>
+                            <% @guests.each do |g| %>
+                                <tr>
+                                    <th scope="row"><%= g.id %></th>
+                                    <td><%= g.name %></td>
+                                    <td><%= g.phone %></td>
+                                    <td><%= g.list.join(',') %></td>
+                                    <td><%= g.invited %></td>
+                                </tr>
+                            <% end %>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
