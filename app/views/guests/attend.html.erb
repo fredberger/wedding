@@ -1,6 +1,6 @@
 <div id="app">
     <div id="wrapper">
-        <div class="container">
+        <div class="container" style="overflow-x: scroll;">
             <br/>
             <br/>
             <div class="row">
@@ -16,7 +16,7 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <h5>Confirmados</h5>
+                            <h5>Confirmados: <b><%= @attend_count %></b></h5>
                             <% @attend.each do |a| %>
                                 <tr>
                                     <th scope="row"><%= a.id %></th>
@@ -72,7 +72,7 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <h5>Restante</h5>
+                            <h5>Restante: <b><%= @guests_count %></b></h5>
                             <% @guests.each do |g| %>
                                 <tr>
                                     <th scope="row"><%= g.id %></th>
