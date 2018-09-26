@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', () => {
     methods: {
       keymonitor: function (event) {
         var that = this
-        const found = that.list.find((l) => l.name.normalize('NFD').replace(/\s/g,'').replace(/[\u0300-\u036f]/g, "").toLowerCase() === that.name.normalize('NFD').replace(/\s/g,'').replace(/[\u0300-\u036f]/g, "").toLowerCase())
+        const found = that.list.find((l) => l.name.replace(/\./g, "").normalize('NFD').replace(/\s/g,'').replace(/[\u0300-\u036f]/g, "").toLowerCase() === that.name.replace(/\./g, "").normalize('NFD').replace(/\s/g,'').replace(/[\u0300-\u036f]/g, "").toLowerCase())
 
         if (found) {
           that.selected = found

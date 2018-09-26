@@ -1,13 +1,6 @@
 //List of map markers
 var map_markers = [
 	{
-		"title": "Hotel Ibis",
-		"latitude":-21.6780477,
-		"longitude":-49.7656437,
-		"icon":"fa-bed",
-		"infoWindow": "<strong>Hotel Ibis</strong><br/>R. Floriano Peixoto, 1808 - Centro, Lins-SP<br/>Tel.: (14) 3511-0100"
-	},
-	{
 		"title": "Blue Tree Park Lins | Resort",
 		"latitude":-21.691068,
 		"longitude":-49.7595692,
@@ -22,18 +15,11 @@ var map_markers = [
 		"infoWindow": "<strong>Hotel Pousada Barravento</strong><br/>R. Ver. Manoel Ouvinhas Júnior, 31 - Jardim Arapua, Lins-SP<br/>Tel.: (14) 3522-5050"
 	},
 	{
-		"title": "Cristal Palace Hotel",
-		"latitude":-21.683242,
-		"longitude":-49.7602028,
+		"title": "Wanna Hotel",
+		"latitude":-21.6738428,
+		"longitude":-49.754304,
 		"icon":"fa-bed",
-		"infoWindow": "<strong>Cristal Palace Hotel</strong><br/>R. Luiz Gama, 1771 - Bairro Xingú, Lins-SP<br/>Tel.: (14) 3511-0700"
-	},
-	{
-		"title": "Cristal Palace Inn",
-		"latitude":-21.6838271,
-		"longitude":-49.7599567,
-		"icon":"fa-bed",
-		"infoWindow": "<strong>Cristal Palace Inn</strong><br/>R. Apiacás, 85, Lins-SP<br/>Tel.: (14) 3533-3700"
+		"infoWindow": "<strong>Wanna Hotel</strong><br/>R. Voluntário Vitóriano Borges, 117 - Centro, Lins-SP<br/>Tel.: (14) 3523-1317"
 	},
 	{
 		"title": "Hotel Esplanada",
