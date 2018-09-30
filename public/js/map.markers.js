@@ -29,6 +29,13 @@ var map_markers = [
 		"infoWindow": "<strong>Hotel Esplanada</strong><br/>Av. Júlio Prestes, 930, Promissão-SP<br/>Tel.: (14) 3541-1644"
 	},
 	{
+		"title": "Hotel Peixinho",
+		"latitude":-21.547745,
+		"longitude":-49.861544,
+		"icon":"fa-bed",
+		"infoWindow": "<strong>Hotel Peixinho</strong><br/>Via de Acesso Shuei Uetsuka, 1021, Promissão-SP<br/>Tel.: (14) 3541-1924"
+	},
+	{
 		"title": "Salão de Beleza Vanessa Zonetti",
 		"latitude":-21.537527,
 		"longitude":-49.860832,
